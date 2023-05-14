@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .main-login {
@@ -51,6 +54,7 @@ body {
 }
 
 .text-field {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -78,4 +82,20 @@ body {
 
 .text-field > input::placeholder {
   color: #f0ffff94;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #00ff8052;
 }
