@@ -1,10 +1,12 @@
 import express from 'express';
-import { router } from './routes';
+import { router } from '.';
 const app = express();
+const engines = require('consolidate')
 const PORT = 3301;
 
 app.use(express.json());
 app.use(express.urlencoded());
+
 
 app.use(router);
 

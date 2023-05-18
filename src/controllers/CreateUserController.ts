@@ -3,7 +3,8 @@ import { database } from '../database';
 
 export class CreateUserController {
   async handle(req: Request, res: Response) {
-    const { email, password } = req.body;
+    const { email } = req.body.usuario;
+    const { password } = req.body.password;
 
     const user = await database.user.create({
       data: {
